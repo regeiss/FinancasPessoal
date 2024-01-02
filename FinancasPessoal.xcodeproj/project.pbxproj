@@ -8,17 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		E13DD2B42B25FF00002707D2 /* FinancasPessoalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13DD2B32B25FF00002707D2 /* FinancasPessoalApp.swift */; };
-		E13DD2B62B25FF00002707D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13DD2B52B25FF00002707D2 /* ContentView.swift */; };
 		E13DD2B82B25FF01002707D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E13DD2B72B25FF01002707D2 /* Assets.xcassets */; };
 		E13DD2BB2B25FF01002707D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E13DD2BA2B25FF01002707D2 /* Preview Assets.xcassets */; };
+		E13DD2C32B260C9B002707D2 /* SwiftUICoordinator in Frameworks */ = {isa = PBXBuildFile; productRef = E13DD2C22B260C9B002707D2 /* SwiftUICoordinator */; };
+		E13DD2C62B260D8C002707D2 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13DD2C52B260D8C002707D2 /* DependencyContainer.swift */; };
+		E13DD2C82B260DFD002707D2 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13DD2C72B260DFD002707D2 /* CoordinatorFactory.swift */; };
+		E13DD2CA2B260E4A002707D2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13DD2C92B260E4A002707D2 /* AppCoordinator.swift */; };
+		E13DD2CC2B26818C002707D2 /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13DD2CB2B26818C002707D2 /* DeepLinkHandler.swift */; };
+		E13DD2CE2B26822A002707D2 /* MenuInicialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13DD2CD2B26822A002707D2 /* MenuInicialView.swift */; };
+		E1D34CD32B4238A7004552C4 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E1D34CD22B4238A7004552C4 /* .swiftlint.yml */; };
+		E1D34CD62B424851004552C4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E1D34CD52B424851004552C4 /* Localizable.xcstrings */; };
+		E1D34CE32B4305C3004552C4 /* FadeTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CE22B4305C3004552C4 /* FadeTransitions.swift */; };
+		E1D34CE52B430626004552C4 /* SlideTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CE42B430626004552C4 /* SlideTransitions.swift */; };
+		E1D34CE92B439F43004552C4 /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CE82B439F43004552C4 /* LoginAction.swift */; };
+		E1D34CEB2B439F4D004552C4 /* LoginRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CEA2B439F4D004552C4 /* LoginRoute.swift */; };
+		E1D34CED2B439F5A004552C4 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CEC2B439F5A004552C4 /* LoginCoordinator.swift */; };
+		E1D34CF12B442DCB004552C4 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CF02B442DCB004552C4 /* SettingsCoordinator.swift */; };
+		E1D34CF32B442DD6004552C4 /* SettingsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CF22B442DD6004552C4 /* SettingsAction.swift */; };
+		E1D34CF52B442DE1004552C4 /* SettingsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CF42B442DE1004552C4 /* SettingsRoute.swift */; };
+		E1D34CF72B442DF5004552C4 /* HomeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CF62B442DF5004552C4 /* HomeAction.swift */; };
+		E1D34CF92B442E08004552C4 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CF82B442E08004552C4 /* HomeCoordinator.swift */; };
+		E1D34CFB2B442E17004552C4 /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CFA2B442E17004552C4 /* HomeRoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E13DD2B02B25FF00002707D2 /* FinancasPessoal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancasPessoal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13DD2B32B25FF00002707D2 /* FinancasPessoalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancasPessoalApp.swift; sourceTree = "<group>"; };
-		E13DD2B52B25FF00002707D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E13DD2B72B25FF01002707D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E13DD2BA2B25FF01002707D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E13DD2C52B260D8C002707D2 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		E13DD2C72B260DFD002707D2 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		E13DD2C92B260E4A002707D2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E13DD2CB2B26818C002707D2 /* DeepLinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
+		E13DD2CD2B26822A002707D2 /* MenuInicialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInicialView.swift; sourceTree = "<group>"; };
+		E1D34CD22B4238A7004552C4 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		E1D34CD52B424851004552C4 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		E1D34CE22B4305C3004552C4 /* FadeTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeTransitions.swift; sourceTree = "<group>"; };
+		E1D34CE42B430626004552C4 /* SlideTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTransitions.swift; sourceTree = "<group>"; };
+		E1D34CE82B439F43004552C4 /* LoginAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
+		E1D34CEA2B439F4D004552C4 /* LoginRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoute.swift; sourceTree = "<group>"; };
+		E1D34CEC2B439F5A004552C4 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		E1D34CF02B442DCB004552C4 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		E1D34CF22B442DD6004552C4 /* SettingsAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAction.swift; sourceTree = "<group>"; };
+		E1D34CF42B442DE1004552C4 /* SettingsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRoute.swift; sourceTree = "<group>"; };
+		E1D34CF62B442DF5004552C4 /* HomeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAction.swift; sourceTree = "<group>"; };
+		E1D34CF82B442E08004552C4 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		E1D34CFA2B442E17004552C4 /* HomeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13DD2C32B260C9B002707D2 /* SwiftUICoordinator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +71,7 @@
 		E13DD2A72B25FF00002707D2 = {
 			isa = PBXGroup;
 			children = (
+				E1D34CD22B4238A7004552C4 /* .swiftlint.yml */,
 				E13DD2B22B25FF00002707D2 /* FinancasPessoal */,
 				E13DD2B12B25FF00002707D2 /* Products */,
 			);
@@ -51,10 +88,13 @@
 		E13DD2B22B25FF00002707D2 /* FinancasPessoal */ = {
 			isa = PBXGroup;
 			children = (
+				E1D34CD72B424927004552C4 /* Code */,
+				E1D34CD42B424808004552C4 /* SupportingFiles */,
 				E13DD2B32B25FF00002707D2 /* FinancasPessoalApp.swift */,
-				E13DD2B52B25FF00002707D2 /* ContentView.swift */,
 				E13DD2B72B25FF01002707D2 /* Assets.xcassets */,
 				E13DD2B92B25FF01002707D2 /* Preview Content */,
+				E13DD2C92B260E4A002707D2 /* AppCoordinator.swift */,
+				E13DD2CD2B26822A002707D2 /* MenuInicialView.swift */,
 			);
 			path = FinancasPessoal;
 			sourceTree = "<group>";
@@ -67,6 +107,155 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E13DD2C42B260D64002707D2 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				E13DD2C52B260D8C002707D2 /* DependencyContainer.swift */,
+				E13DD2C72B260DFD002707D2 /* CoordinatorFactory.swift */,
+				E13DD2CB2B26818C002707D2 /* DeepLinkHandler.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		E1D34CD42B424808004552C4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E1D34CD52B424851004552C4 /* Localizable.xcstrings */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E1D34CD72B424927004552C4 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				E1D34CDE2B430442004552C4 /* Config */,
+				E1D34CDA2B4249B9004552C4 /* Features */,
+				E1D34CD92B424943004552C4 /* Extensions */,
+				E1D34CD82B424938004552C4 /* Utilities */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		E1D34CD82B424938004552C4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E1D34CD92B424943004552C4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E1D34CDA2B4249B9004552C4 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				E1D34CE62B4392C8004552C4 /* Settings */,
+				E1D34CDD2B4303B4004552C4 /* Home */,
+				E1D34CDC2B4303AA004552C4 /* Login */,
+				E1D34CDB2B43039C004552C4 /* Common */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		E1D34CDB2B43039C004552C4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E1D34CDC2B4303AA004552C4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E1D34CE72B439E87004552C4 /* Coordinator */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E1D34CDD2B4303B4004552C4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E1D34CEF2B442D6A004552C4 /* Coordinator */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E1D34CDE2B430442004552C4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E1D34CDF2B430452004552C4 /* Coordinator */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		E1D34CDF2B430452004552C4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E1D34CE12B430576004552C4 /* DeepLink */,
+				E1D34CE02B4304EA004552C4 /* Transitions */,
+				E13DD2C42B260D64002707D2 /* Dependencies */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E1D34CE02B4304EA004552C4 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				E1D34CE22B4305C3004552C4 /* FadeTransitions.swift */,
+				E1D34CE42B430626004552C4 /* SlideTransitions.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		E1D34CE12B430576004552C4 /* DeepLink */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DeepLink;
+			sourceTree = "<group>";
+		};
+		E1D34CE62B4392C8004552C4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E1D34CEE2B442D60004552C4 /* Coordinator */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E1D34CE72B439E87004552C4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E1D34CE82B439F43004552C4 /* LoginAction.swift */,
+				E1D34CEC2B439F5A004552C4 /* LoginCoordinator.swift */,
+				E1D34CEA2B439F4D004552C4 /* LoginRoute.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E1D34CEE2B442D60004552C4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E1D34CF22B442DD6004552C4 /* SettingsAction.swift */,
+				E1D34CF02B442DCB004552C4 /* SettingsCoordinator.swift */,
+				E1D34CF42B442DE1004552C4 /* SettingsRoute.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E1D34CEF2B442D6A004552C4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E1D34CF62B442DF5004552C4 /* HomeAction.swift */,
+				E1D34CF82B442E08004552C4 /* HomeCoordinator.swift */,
+				E1D34CFA2B442E17004552C4 /* HomeRoute.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,12 +266,16 @@
 				E13DD2AC2B25FF00002707D2 /* Sources */,
 				E13DD2AD2B25FF00002707D2 /* Frameworks */,
 				E13DD2AE2B25FF00002707D2 /* Resources */,
+				E1D34CD12B42377A004552C4 /* SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FinancasPessoal;
+			packageProductDependencies = (
+				E13DD2C22B260C9B002707D2 /* SwiftUICoordinator */,
+			);
 			productName = FinancasPessoal;
 			productReference = E13DD2B02B25FF00002707D2 /* FinancasPessoal.app */;
 			productType = "com.apple.product-type.application";
@@ -109,8 +302,13 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
+				de,
 			);
 			mainGroup = E13DD2A72B25FF00002707D2;
+			packageReferences = (
+				E13DD2C12B260C9B002707D2 /* XCRemoteSwiftPackageReference "SwiftUICoordinator" */,
+			);
 			productRefGroup = E13DD2B12B25FF00002707D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,20 +323,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D34CD32B4238A7004552C4 /* .swiftlint.yml in Resources */,
 				E13DD2BB2B25FF01002707D2 /* Preview Assets.xcassets in Resources */,
+				E1D34CD62B424851004552C4 /* Localizable.xcstrings in Resources */,
 				E13DD2B82B25FF01002707D2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E1D34CD12B42377A004552C4 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E13DD2AC2B25FF00002707D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E13DD2B62B25FF00002707D2 /* ContentView.swift in Sources */,
+				E1D34CE52B430626004552C4 /* SlideTransitions.swift in Sources */,
+				E1D34CFB2B442E17004552C4 /* HomeRoute.swift in Sources */,
+				E1D34CF72B442DF5004552C4 /* HomeAction.swift in Sources */,
+				E1D34CF12B442DCB004552C4 /* SettingsCoordinator.swift in Sources */,
+				E13DD2CC2B26818C002707D2 /* DeepLinkHandler.swift in Sources */,
+				E1D34CE92B439F43004552C4 /* LoginAction.swift in Sources */,
+				E1D34CEB2B439F4D004552C4 /* LoginRoute.swift in Sources */,
+				E1D34CED2B439F5A004552C4 /* LoginCoordinator.swift in Sources */,
+				E1D34CF52B442DE1004552C4 /* SettingsRoute.swift in Sources */,
+				E13DD2CE2B26822A002707D2 /* MenuInicialView.swift in Sources */,
+				E13DD2C62B260D8C002707D2 /* DependencyContainer.swift in Sources */,
+				E13DD2CA2B260E4A002707D2 /* AppCoordinator.swift in Sources */,
 				E13DD2B42B25FF00002707D2 /* FinancasPessoalApp.swift in Sources */,
+				E1D34CF32B442DD6004552C4 /* SettingsAction.swift in Sources */,
+				E1D34CF92B442E08004552C4 /* HomeCoordinator.swift in Sources */,
+				E13DD2C82B260DFD002707D2 /* CoordinatorFactory.swift in Sources */,
+				E1D34CE32B4305C3004552C4 /* FadeTransitions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +511,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FinancasPessoal/Preview Content\"";
 				DEVELOPMENT_TEAM = 4DLN7FPJ74;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -303,6 +541,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FinancasPessoal/Preview Content\"";
 				DEVELOPMENT_TEAM = 4DLN7FPJ74;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -344,6 +583,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E13DD2C12B260C9B002707D2 /* XCRemoteSwiftPackageReference "SwiftUICoordinator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/erikdrobne/SwiftUICoordinator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E13DD2C22B260C9B002707D2 /* SwiftUICoordinator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E13DD2C12B260C9B002707D2 /* XCRemoteSwiftPackageReference "SwiftUICoordinator" */;
+			productName = SwiftUICoordinator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E13DD2A82B25FF00002707D2 /* Project object */;
 }

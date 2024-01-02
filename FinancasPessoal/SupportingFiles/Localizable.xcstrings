@@ -1,0 +1,27 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "Key 1" : {
+      "extractionState" : "manual"
+    },
+    "Key 2" : {
+      "extractionState" : "manual"
+    },
+    "Key 3" : {
+      "extractionState" : "manual"
+    },
+    "Key 4" : {
+      "extractionState" : "manual"
+    },
+    "Key 5" : {
+      "extractionState" : "manual"
+    },
+    "Simple" : {
+
+    }
+  },
+  "version" : "1.0"
+}
