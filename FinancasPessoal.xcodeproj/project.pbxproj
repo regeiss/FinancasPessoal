@@ -29,6 +29,9 @@
 		E1D34CF72B442DF5004552C4 /* HomeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CF62B442DF5004552C4 /* HomeAction.swift */; };
 		E1D34CF92B442E08004552C4 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CF82B442E08004552C4 /* HomeCoordinator.swift */; };
 		E1D34CFB2B442E17004552C4 /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CFA2B442E17004552C4 /* HomeRoute.swift */; };
+		E1D34D022B44DF62004552C4 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34D012B44DF62004552C4 /* LoginScreen.swift */; };
+		E1D34D092B44E8EF004552C4 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34D082B44E8EF004552C4 /* HomeScreen.swift */; };
+		E1D34D102B44EE93004552C4 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34D0F2B44EE93004552C4 /* SettingsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		E1D34CF62B442DF5004552C4 /* HomeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAction.swift; sourceTree = "<group>"; };
 		E1D34CF82B442E08004552C4 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		E1D34CFA2B442E17004552C4 /* HomeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
+		E1D34D012B44DF62004552C4 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		E1D34D082B44E8EF004552C4 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		E1D34D0F2B44EE93004552C4 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,10 +159,10 @@
 		E1D34CDA2B4249B9004552C4 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				E1D34CE62B4392C8004552C4 /* Settings */,
+				E1D34CDB2B43039C004552C4 /* Common */,
 				E1D34CDD2B4303B4004552C4 /* Home */,
 				E1D34CDC2B4303AA004552C4 /* Login */,
-				E1D34CDB2B43039C004552C4 /* Common */,
+				E1D34CE62B4392C8004552C4 /* Settings */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -171,7 +177,12 @@
 		E1D34CDC2B4303AA004552C4 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				E1D34CFC2B44DE94004552C4 /* Action */,
 				E1D34CE72B439E87004552C4 /* Coordinator */,
+				E1D34CFD2B44DE9F004552C4 /* Model */,
+				E1D34CFE2B44DEAB004552C4 /* Screen */,
+				E1D34CFF2B44DEB3004552C4 /* View */,
+				E1D34D002B44DED0004552C4 /* ViewModel */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -179,7 +190,12 @@
 		E1D34CDD2B4303B4004552C4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E1D34D032B44E8B3004552C4 /* Action */,
 				E1D34CEF2B442D6A004552C4 /* Coordinator */,
+				E1D34D042B44E8BC004552C4 /* Model */,
+				E1D34D052B44E8C4004552C4 /* Screen */,
+				E1D34D062B44E8CB004552C4 /* View */,
+				E1D34D072B44E8D3004552C4 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -221,7 +237,12 @@
 		E1D34CE62B4392C8004552C4 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				E1D34D0A2B44ED14004552C4 /* Action */,
 				E1D34CEE2B442D60004552C4 /* Coordinator */,
+				E1D34D0B2B44ED1C004552C4 /* Model */,
+				E1D34D0C2B44ED32004552C4 /* Screen */,
+				E1D34D0D2B44ED3C004552C4 /* View */,
+				E1D34D0E2B44ED43004552C4 /* ViewModel */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -254,6 +275,114 @@
 				E1D34CFA2B442E17004552C4 /* HomeRoute.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E1D34CFC2B44DE94004552C4 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		E1D34CFD2B44DE9F004552C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1D34CFE2B44DEAB004552C4 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E1D34D012B44DF62004552C4 /* LoginScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		E1D34CFF2B44DEB3004552C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1D34D002B44DED0004552C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E1D34D032B44E8B3004552C4 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		E1D34D042B44E8BC004552C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1D34D052B44E8C4004552C4 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E1D34D082B44E8EF004552C4 /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		E1D34D062B44E8CB004552C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1D34D072B44E8D3004552C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E1D34D0A2B44ED14004552C4 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		E1D34D0B2B44ED1C004552C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1D34D0C2B44ED32004552C4 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E1D34D0F2B44EE93004552C4 /* SettingsScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		E1D34D0D2B44ED3C004552C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1D34D0E2B44ED43004552C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,9 +496,12 @@
 				E1D34CE92B439F43004552C4 /* LoginAction.swift in Sources */,
 				E1D34CEB2B439F4D004552C4 /* LoginRoute.swift in Sources */,
 				E1D34CED2B439F5A004552C4 /* LoginCoordinator.swift in Sources */,
+				E1D34D102B44EE93004552C4 /* SettingsScreen.swift in Sources */,
 				E1D34CF52B442DE1004552C4 /* SettingsRoute.swift in Sources */,
+				E1D34D092B44E8EF004552C4 /* HomeScreen.swift in Sources */,
 				E13DD2CE2B26822A002707D2 /* MenuInicialView.swift in Sources */,
 				E13DD2C62B260D8C002707D2 /* DependencyContainer.swift in Sources */,
+				E1D34D022B44DF62004552C4 /* LoginScreen.swift in Sources */,
 				E13DD2CA2B260E4A002707D2 /* AppCoordinator.swift in Sources */,
 				E13DD2B42B25FF00002707D2 /* FinancasPessoalApp.swift in Sources */,
 				E1D34CF32B442DD6004552C4 /* SettingsAction.swift in Sources */,

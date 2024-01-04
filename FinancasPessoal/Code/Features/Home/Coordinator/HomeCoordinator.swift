@@ -31,4 +31,21 @@ class HomeCoordinator: Routing
          self.startRoute = startRoute
          self.factory = factory
      }
+    
+    func handle(_ action: CoordinatorAction)
+    {
+    }
+}
+
+extension HomeCoordinator: RouterViewFactory
+{
+    @ViewBuilder
+    public func view(for route: HomeRoute) -> some View
+    {
+        switch route 
+        {
+        case .home:
+            HomeScreen<HomeCoordinator>()
+        }
+    }
 }

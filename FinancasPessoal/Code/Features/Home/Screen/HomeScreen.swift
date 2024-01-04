@@ -6,13 +6,33 @@
 //
 
 import SwiftUI
+import SwiftUICoordinator
 
-struct HomeScreen: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct HomeScreen<Coordinator: Routing>: View
+{
+    @EnvironmentObject var coordinator: Coordinator
+    @StateObject var viewModel = ViewModel<Coordinator>()
+
+    var body: some View
+    {
+        VStack
+        {
+            Text("Home")
+        }
+        .onAppear
+        { viewModel.coordinator = coordinator }
     }
 }
 
-#Preview {
-    HomeScreen()
+extension HomeScreen
+{
+    @MainActor class ViewModel<R: Routing>: ObservableObject
+     {
+         var coordinator: R?
+
+//         func didTapAdd()
+//         {
+//             coordinator?.handle(AbastecimentoAction.inclusao)
+//         }
+     }
 }

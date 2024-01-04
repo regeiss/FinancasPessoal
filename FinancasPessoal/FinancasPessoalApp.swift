@@ -45,9 +45,7 @@ final class SceneDelegate: NSObject, UIWindowSceneDelegate
             let url = URLContexts.first?.url,
             let deepLink = try? dependencyContainer.deepLinkHandler.link(for: url),
             let params = try? dependencyContainer.deepLinkHandler.params(for: url, and: deepLink.params)
-        else {
-            return
-        }
+        else { return }
         
         dependencyContainer.appCoordinator?.handle(deepLink, with: params)
     }

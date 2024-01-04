@@ -51,7 +51,8 @@ extension DependencyContainer: CoordinatorFactory
     {
         return HomeCoordinator(
             parent: parent,
-            navigationController: self.navigationController
+            navigationController: self.navigationController,
+            factory: self
         )
     }
     
@@ -59,7 +60,8 @@ extension DependencyContainer: CoordinatorFactory
     {
         return SettingsCoordinator(
             parent: parent,
-            navigationController: self.navigationController
+            navigationController: self.navigationController,
+            factory: self
         )
     }
 }
@@ -68,4 +70,3 @@ extension DependencyContainer
 {
     static let mock = DependencyContainer()
 }
-

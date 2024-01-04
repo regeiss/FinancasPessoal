@@ -11,12 +11,15 @@ import SwiftUICoordinator
 enum LoginRoute: NavigationRoute
 {
     case login
+    case home
+    case settings
     
     var title: String?
     {
-        switch self {
-        case .login:
-            return "SwiftUI Shapes"
+        switch self 
+        {
+        case .login, .home:
+            return "Finanças pessoais"
         default:
             return nil
         }
@@ -26,9 +29,10 @@ enum LoginRoute: NavigationRoute
     {
         switch self
         {
-        case .login:
+        case .home, .settings:
             // We have to pass nil for the route presenting a child coordinator.
             return nil
+            // return .push(animated: true)
         default:
             return .push(animated: true)
         }

@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Home" : {
+
+    },
     "Key" : {
       "extractionState" : "manual"
     },
@@ -18,6 +21,18 @@
     },
     "Key 5" : {
       "extractionState" : "manual"
+    },
+    "Login" : {
+
+    },
+    "Login.PasswordField.Title" : {
+
+    },
+    "Login.UsernameField.Title" : {
+
+    },
+    "Settings" : {
+
     },
     "Simple" : {
 

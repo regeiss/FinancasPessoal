@@ -6,3 +6,27 @@
 //
 
 import Foundation
+import SwiftUICoordinator
+
+enum SettingsRoute: NavigationRoute
+{
+    case settings
+    
+    var title: String?
+      {
+          switch self
+          {
+          case .settings:
+              return "Ajustes"
+          }
+      }
+      
+      var action: TransitionAction?
+      {
+          switch self
+          {
+          default:
+              return .push(animated: true)
+          }
+      }
+}

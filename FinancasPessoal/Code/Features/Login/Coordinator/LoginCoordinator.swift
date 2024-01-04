@@ -32,50 +32,42 @@ class LoginCoordinator: Routing
     
     func handle(_ action: CoordinatorAction)
     {
-        switch action {
-          case ShapesAction.simpleShapes:
-              let coordinator = factory.makeSimpleShapesCoordinator(parent: self)
-              try? coordinator.start()
-          case ShapesAction.customShapes:
-              let coordinator = factory.makeCustomShapesCoordinator(parent: self)
-              try? coordinator.start()
-          case let ShapesAction.featuredShape(route):
-              switch route {
-              case let shapeRoute as SimpleShapesRoute where shapeRoute != .simpleShapes:
-                  let coordinator = factory.makeSimpleShapesCoordinator(parent: self)
-                  coordinator.append(routes: [.simpleShapes, shapeRoute])
-              case let shapeRoute as CustomShapesRoute where shapeRoute != .customShapes:
-                  let coordinator = factory.makeCustomShapesCoordinator(parent: self)
-                  coordinator.append(routes: [.customShapes, shapeRoute])
-              default:
-                  return
-              }
-          case Action.done(_):
-              popToRoot()
-              childCoordinators.removeAll()
-          default:
-              parent?.handle(action)
-          }
+        switch action 
+        {
+        case LoginAction.login:
+            let coordinator = factory.makeLoginCoordinator(parent: self)
+            try? coordinator.start()
+            
+        case LoginAction.home:
+            let coordinator = factory.makeHomeCoordinator(parent: self)
+            try? coordinator.start()
+            
+        case LoginAction.settings:
+            let coordinator = factory.makeSettingsCoordinator(parent: self)
+            try? coordinator.start()
+            
+        case Action.done(_):
+            popToRoot()
+            childCoordinators.removeAll()
+        default:
+            parent?.handle(action)
+        }
     }
 }
 
 extension LoginCoordinator: RouterViewFactory
 {
     @ViewBuilder
-     public func view(for route: LoginRoute) -> some View 
+    public func view(for route: LoginRoute) -> some View
     {
-         switch route 
+        switch route
         {
-         case .login:
-             ShapeListView<ShapesCoordinator>()
-         case .simpleShapes:
-             /// We are returning an empty view for the route presenting a child coordinator.
-             EmptyView()
-         case .customShapes:
-             CustomShapesView<CustomShapesCoordinator>()
-         case .featuredShape:
-             /// We are returning an empty view for the route presenting a child coordinator.
-             EmptyView()
-         }
-     }
+        case .login:
+            LoginScreen<LoginCoordinator>()
+        case .home:
+            HomeScreen<HomeCoordinator>()
+        case .settings:
+            SettingsScreen<SettingsCoordinator>()
+        }
+    }
 }

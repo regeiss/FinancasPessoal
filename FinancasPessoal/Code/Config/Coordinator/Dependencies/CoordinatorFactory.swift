@@ -15,4 +15,3 @@ protocol CoordinatorFactory
     func makeSettingsCoordinator(parent: Coordinator) -> SettingsCoordinator
     func makeHomeCoordinator(parent: Coordinator) -> HomeCoordinator
 }
-

@@ -11,4 +11,6 @@ import SwiftUICoordinator
 enum LoginAction: CoordinatorAction
 {
     case login
+    case home
+    case settings
 }

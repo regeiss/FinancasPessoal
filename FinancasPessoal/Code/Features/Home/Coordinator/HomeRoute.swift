@@ -28,7 +28,7 @@ enum HomeRoute: NavigationRoute
         switch self 
         {
         case .home:
-            // We have to pass nil for the route presenting a child coordinator.
+            return .push(animated: true)
             return nil
         default:
             return .push(animated: true)

@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import SwiftUICoordinator
+
+enum SettingsAction: CoordinatorAction
+{
+    case settings
+}
