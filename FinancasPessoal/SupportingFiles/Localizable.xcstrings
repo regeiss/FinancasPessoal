@@ -1,6 +1,12 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Dismiss" : {
+
+    },
+    "Don't have a login? Sigup!" : {
+
+    },
     "Home" : {
 
     },
@@ -32,9 +38,6 @@
 
     },
     "Settings" : {
-
-    },
-    "Simple" : {
 
     }
   },

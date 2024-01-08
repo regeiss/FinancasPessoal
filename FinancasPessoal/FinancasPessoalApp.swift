@@ -6,13 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseCore
 
 @main
 struct FinancasPessoalApp: App 
 {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    var body: some Scene {
-        WindowGroup {
+    var body: some Scene 
+    {
+           
+        WindowGroup
+        {
             
         }
     }
@@ -20,7 +25,6 @@ struct FinancasPessoalApp: App
 
 final class SceneDelegate: NSObject, UIWindowSceneDelegate 
 {
-
     var dependencyContainer = DependencyContainer()
     
     func scene(
@@ -53,13 +57,16 @@ final class SceneDelegate: NSObject, UIWindowSceneDelegate
 
 class AppDelegate: NSObject, UIApplicationDelegate 
 {
-    func application(
-        _ application: UIApplication,
-        configurationForConnecting connectingSceneSession: UISceneSession,
-        options: UIScene.ConnectionOptions
-    ) -> UISceneConfiguration {
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration
+    {
         let sceneConfig = UISceneConfiguration(name: nil, sessionRole: connectingSceneSession.role)
         sceneConfig.delegateClass = SceneDelegate.self
         return sceneConfig
+    }
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool 
+    {
+        FirebaseApp.configure()
+        return true
     }
 }

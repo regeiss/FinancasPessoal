@@ -15,19 +15,30 @@ struct SettingsScreen<Coordinator: Routing>: View
     
     var body: some View
     {
-        Text("Settings")
+        VStack
+        {
+            Text("Settings")
+        }
+        .onAppear{ viewModel.coordinator = coordinator}
+        .toolbar(content: {
+            ToolbarItem {
+                Button { viewModel.didTapClose()}
+            label: { Label("Dismiss", systemImage: "xmark.circle.fill")}
+            }
+            
+        })
     }
 }
 
 extension SettingsScreen
 {
     @MainActor class ViewModel<R: Routing>: ObservableObject
-     {
-         var coordinator: R?
-
-//         func didTapAdd()
-//         {
-//             coordinator?.handle(AbastecimentoAction.inclusao)
-//         }
-     }
+    {
+        var coordinator: R?
+        
+        func didTapClose()
+        {
+            coordinator?.pop(animated: true)
+        }
+    }
 }
