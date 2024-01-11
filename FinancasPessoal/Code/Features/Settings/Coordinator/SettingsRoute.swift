@@ -26,9 +26,7 @@ enum SettingsRoute: NavigationRoute
           switch self
           {
           case .settings:
-              return .present(delegate: SlideTransitionDelegate())
-//          default:
-//              return .push(animated: true)
+              return .push(animated: true)
           }
       }
 }

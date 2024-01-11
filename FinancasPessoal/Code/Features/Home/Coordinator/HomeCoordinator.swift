@@ -34,6 +34,14 @@ class HomeCoordinator: Routing
     
     func handle(_ action: CoordinatorAction)
     {
+        switch action
+        {
+        case HomeAction.settings:
+            let coordinator = factory.makeSettingsCoordinator(parent: self)
+            try? coordinator.start()
+        default:
+            parent?.handle(action)
+        }
     }
 }
 
@@ -46,6 +54,8 @@ extension HomeCoordinator: RouterViewFactory
         {
         case .home:
             HomeScreen<HomeCoordinator>()
+        case .settings:
+            SettingsScreen<SettingsCoordinator>()
         }
     }
 }

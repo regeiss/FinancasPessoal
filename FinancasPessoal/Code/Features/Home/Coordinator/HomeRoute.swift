@@ -11,15 +11,16 @@ import SwiftUICoordinator
 enum HomeRoute: NavigationRoute
 {
     case home
+    case settings
     
-    var title: String? 
+    var title: String?
     {
         switch self 
         {
         case .home:
             return "Home"
-        default:
-            return nil
+        case .settings:
+            return "Ajustes"
         }
     }
     
@@ -29,7 +30,6 @@ enum HomeRoute: NavigationRoute
         {
         case .home:
             return .push(animated: true)
-            return nil
         default:
             return .push(animated: true)
         }

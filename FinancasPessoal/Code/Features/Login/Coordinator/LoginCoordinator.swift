@@ -42,7 +42,7 @@ class LoginCoordinator: Routing
             let coordinator = factory.makeHomeCoordinator(parent: self)
             try? coordinator.start()
             
-        case LoginAction.settings:
+        case LoginAction.signup:
             let coordinator = factory.makeSettingsCoordinator(parent: self)
             try? coordinator.start()
             
@@ -66,7 +66,7 @@ extension LoginCoordinator: RouterViewFactory
             LoginScreen<LoginCoordinator>()
         case .home:
             HomeScreen<HomeCoordinator>()
-        case .settings:
+        case .signup:
             SettingsScreen<SettingsCoordinator>()
         }
     }

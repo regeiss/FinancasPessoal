@@ -11,4 +11,5 @@ import SwiftUICoordinator
 enum HomeAction: CoordinatorAction
 {
     case home
+    case settings
 }

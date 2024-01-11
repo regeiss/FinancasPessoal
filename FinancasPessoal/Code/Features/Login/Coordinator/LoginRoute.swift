@@ -12,7 +12,7 @@ enum LoginRoute: NavigationRoute
 {
     case login
     case home
-    case settings
+    case signup
     
     var title: String?
     {
@@ -29,7 +29,7 @@ enum LoginRoute: NavigationRoute
     {
         switch self
         {
-        case .home, .settings:
+        case .home, .signup:
             // We have to pass nil for the route presenting a child coordinator.
             return nil
             // return .push(animated: true)

@@ -12,5 +12,5 @@ enum LoginAction: CoordinatorAction
 {
     case login
     case home
-    case settings
+    case signup
 }

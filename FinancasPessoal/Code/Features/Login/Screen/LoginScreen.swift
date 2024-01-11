@@ -34,6 +34,8 @@ struct LoginScreen<Coordinator: Routing>: View
                     .fill(.gray)
                     .frame(width: 200, height: 65)
             }
+            .padding([.leading, .trailing], 10)
+            .padding([.top, .bottom], 15)
             Spacer()
             VStack
             {
@@ -56,14 +58,12 @@ struct LoginScreen<Coordinator: Routing>: View
                 Divider()
             }
             
-            
-            List (usuario)
+            List(usuario)
             {
                 Text($0.login)
                 Text($0.password)
                 Text($0.id ?? "noId")
             }
-            
             
             Spacer()
             Button
@@ -74,24 +74,16 @@ struct LoginScreen<Coordinator: Routing>: View
                 .frame(maxWidth: .infinity, maxHeight: 60)
                 .foregroundColor(Color.white)
                 .background(Color.blue)
-            .cornerRadius(10) }
+            .cornerRadius(10) }.padding([.top, .bottom], 25)
             Spacer()
-            Text("Don't have a login? Sigup!")
+            Text("Don't have a login? Signup!")
             Spacer()
         }
         .onAppear
         {
             viewModel.coordinator = coordinator
-//            login = usuario[0].login
-//            password = usuario[0].password
         }
-        .toolbar 
-        {
-            ToolbarItem(placement: .navigationBarTrailing)
-            { Button { viewModel.didTapSettings()}
-                label: { Image(systemName: "gear")}}
-        }
-            .padding()
+        .padding()
     }
 }
 
@@ -104,11 +96,6 @@ extension LoginScreen
         func didTapLogin()
         {
             coordinator?.handle(LoginAction.home)
-        }
-        
-        func didTapSettings()
-        {
-            coordinator?.handle(LoginAction.settings)
         }
     }
 }

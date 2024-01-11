@@ -21,6 +21,12 @@ struct HomeScreen<Coordinator: Routing>: View
         }
         .onAppear
         { viewModel.coordinator = coordinator }
+            .toolbar
+        {
+            ToolbarItem(placement: .navigationBarTrailing)
+            { Button { viewModel.didTapSettings()}
+                label: { Image(systemName: "gear")}}
+        }
     }
 }
 
@@ -30,9 +36,9 @@ extension HomeScreen
      {
          var coordinator: R?
 
-//         func didTapAdd()
-//         {
-//             coordinator?.handle(AbastecimentoAction.inclusao)
-//         }
+        func didTapSettings()
+        {
+            coordinator?.handle(HomeAction.settings)
+        }
      }
 }
