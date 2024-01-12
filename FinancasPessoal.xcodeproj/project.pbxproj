@@ -264,6 +264,7 @@
 				E1D34CFC2B44DE94004552C4 /* Action */,
 				E1D34CE72B439E87004552C4 /* Coordinator */,
 				E1D34CFD2B44DE9F004552C4 /* Model */,
+				E139A7F32B477FA4003FAFD8 /* Repositories */,
 				E1D34CFE2B44DEAB004552C4 /* Screen */,
 				E1D34CFF2B44DEB3004552C4 /* View */,
 				E1D34D002B44DED0004552C4 /* ViewModel */,
@@ -289,7 +290,6 @@
 			children = (
 				E1D34CDF2B430452004552C4 /* Coordinator */,
 				E139A7F22B477A2A003FAFD8 /* Network */,
-				E139A7F32B477FA4003FAFD8 /* Repositories */,
 			);
 			path = Config;
 			sourceTree = "<group>";

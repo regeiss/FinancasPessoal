@@ -15,4 +15,5 @@ struct Login: Identifiable, Codable
     @ServerTimestamp var criadoEm: Date?
     var login: String
     var password: String
+    var userID: String?
 }

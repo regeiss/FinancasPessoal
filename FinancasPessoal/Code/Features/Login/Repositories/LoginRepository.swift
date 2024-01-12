@@ -6,18 +6,22 @@
 //
 
 import Foundation
+import Firebase
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 class LoginRepository: ObservableObject
 {
     let db = Firestore.firestore()
+    let userId = Auth.auth().currentUser?.uid
     
     @Published var login = [Login]()
     
     func loadData()
     {
-        db.collection("login").addSnapshotListener { (querySnapshot, error) in
+        db.collection("login")
+            .whereField("userId", isEqualTo: userId)
+            .addSnapshotListener { (querySnapshot, error) in
             if let querySnapshot = querySnapshot {
                 self.login = querySnapshot.documents.compactMap { document in
                     try? document.data(as: Login.self)
