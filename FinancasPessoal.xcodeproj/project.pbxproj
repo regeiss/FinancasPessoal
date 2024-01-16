@@ -50,7 +50,6 @@
 		E13DD2CA2B260E4A002707D2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13DD2C92B260E4A002707D2 /* AppCoordinator.swift */; };
 		E13DD2CC2B26818C002707D2 /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13DD2CB2B26818C002707D2 /* DeepLinkHandler.swift */; };
 		E166105B2B51F9B700E03865 /* SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E166105A2B51F9B700E03865 /* SignInWithAppleButton.swift */; };
-		E1B13D772B4CC5E300E6E8B1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B13D762B4CC5E300E6E8B1 /* LoginViewModel.swift */; };
 		E1B13D792B4E20AD00E6E8B1 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B13D782B4E20AD00E6E8B1 /* LoginRepository.swift */; };
 		E1D122EF2B5568A300D30493 /* AutenticacaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D122EE2B5568A300D30493 /* AutenticacaoService.swift */; };
 		E1D122F62B55703100D30493 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D122F52B55703100D30493 /* LoginScreen.swift */; };
@@ -72,7 +71,6 @@
 		E1D34CF72B442DF5004552C4 /* HomeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CF62B442DF5004552C4 /* HomeAction.swift */; };
 		E1D34CF92B442E08004552C4 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CF82B442E08004552C4 /* HomeCoordinator.swift */; };
 		E1D34CFB2B442E17004552C4 /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34CFA2B442E17004552C4 /* HomeRoute.swift */; };
-		E1D34D022B44DF62004552C4 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34D012B44DF62004552C4 /* LoginScreen.swift */; };
 		E1D34D092B44E8EF004552C4 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34D082B44E8EF004552C4 /* HomeScreen.swift */; };
 		E1D34D102B44EE93004552C4 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D34D0F2B44EE93004552C4 /* SettingsScreen.swift */; };
 /* End PBXBuildFile section */
@@ -89,10 +87,9 @@
 		E13DD2C92B260E4A002707D2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		E13DD2CB2B26818C002707D2 /* DeepLinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
 		E166105A2B51F9B700E03865 /* SignInWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButton.swift; sourceTree = "<group>"; };
-		E1B13D762B4CC5E300E6E8B1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E1B13D782B4E20AD00E6E8B1 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 		E1D122EE2B5568A300D30493 /* AutenticacaoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticacaoService.swift; sourceTree = "<group>"; };
-		E1D122F52B55703100D30493 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		E1D122F52B55703100D30493 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginScreen.swift; path = ../../../Autenticacao/Screen/LoginScreen.swift; sourceTree = "<group>"; };
 		E1D122F72B55708300D30493 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		E1D122F92B55709D00D30493 /* UserProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileScreen.swift; sourceTree = "<group>"; };
 		E1D122FB2B5570BD00D30493 /* AutenticacaoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticacaoViewModel.swift; sourceTree = "<group>"; };
@@ -111,7 +108,6 @@
 		E1D34CF62B442DF5004552C4 /* HomeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAction.swift; sourceTree = "<group>"; };
 		E1D34CF82B442E08004552C4 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		E1D34CFA2B442E17004552C4 /* HomeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
-		E1D34D012B44DF62004552C4 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		E1D34D082B44E8EF004552C4 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		E1D34D0F2B44EE93004552C4 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -245,7 +241,6 @@
 		E1D122F12B556CCF00D30493 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				E1D122FB2B5570BD00D30493 /* AutenticacaoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -253,11 +248,6 @@
 		E1D122F22B556EE900D30493 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				E1D122F52B55703100D30493 /* LoginScreen.swift */,
-				E1D122F72B55708300D30493 /* SignUpScreen.swift */,
-				E1D122F92B55709D00D30493 /* UserProfileScreen.swift */,
-				E1D122FD2B55714E00D30493 /* AutenticadoScreen.swift */,
-				E1D122FF2B55716200D30493 /* AutenticacaoScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -453,7 +443,11 @@
 		E1D34CFE2B44DEAB004552C4 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				E1D34D012B44DF62004552C4 /* LoginScreen.swift */,
+				E1D122F52B55703100D30493 /* LoginScreen.swift */,
+				E1D122F72B55708300D30493 /* SignUpScreen.swift */,
+				E1D122F92B55709D00D30493 /* UserProfileScreen.swift */,
+				E1D122FD2B55714E00D30493 /* AutenticadoScreen.swift */,
+				E1D122FF2B55716200D30493 /* AutenticacaoScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -469,7 +463,7 @@
 		E1D34D002B44DED0004552C4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				E1B13D762B4CC5E300E6E8B1 /* LoginViewModel.swift */,
+				E1D122FB2B5570BD00D30493 /* AutenticacaoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -702,7 +696,6 @@
 				E1D34CF52B442DE1004552C4 /* SettingsRoute.swift in Sources */,
 				E1D34D092B44E8EF004552C4 /* HomeScreen.swift in Sources */,
 				E13DD2C62B260D8C002707D2 /* DependencyContainer.swift in Sources */,
-				E1D34D022B44DF62004552C4 /* LoginScreen.swift in Sources */,
 				E1D122FC2B5570BD00D30493 /* AutenticacaoViewModel.swift in Sources */,
 				E13DD2CA2B260E4A002707D2 /* AppCoordinator.swift in Sources */,
 				E13DD2B42B25FF00002707D2 /* FinancasPessoalApp.swift in Sources */,
@@ -712,7 +705,6 @@
 				E13DD2C82B260DFD002707D2 /* CoordinatorFactory.swift in Sources */,
 				E1D34CE32B4305C3004552C4 /* FadeTransitions.swift in Sources */,
 				E1D122EF2B5568A300D30493 /* AutenticacaoService.swift in Sources */,
-				E1B13D772B4CC5E300E6E8B1 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,13 +20,14 @@ class LoginRepository: ObservableObject
     func loadData()
     {
         db.collection("login")
-            .whereField("userId", isEqualTo: userId)
+            .whereField("userId", isEqualTo: userId as Any)
             .addSnapshotListener { (querySnapshot, error) in
-            if let querySnapshot = querySnapshot {
-                self.login = querySnapshot.documents.compactMap { document in
-                    try? document.data(as: Login.self)
+                if let querySnapshot = querySnapshot
+                {
+                    self.login = querySnapshot.documents.compactMap { document in
+                        try? document.data(as: Login.self)
+                    }
                 }
             }
-        }
     }
 }
