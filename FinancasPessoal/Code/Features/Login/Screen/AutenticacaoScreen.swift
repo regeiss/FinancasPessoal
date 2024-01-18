@@ -5,11 +5,26 @@
 //  Created by Roberto Edgar Geiss on 15/01/24.
 //
 
+import Combine
 import SwiftUI
 
-struct AutenticacaoScreen: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct AutenticacaoScreen: View
+{
+    @EnvironmentObject var viewModel: AuthenticationViewModel
+    
+    var body: some View
+    {
+        VStack
+        {
+            switch viewModel.flow
+            {
+            case .login:
+                LoginScreen()
+                    .environmentObject(viewModel)
+            case .signUp:
+                SignupScreen()
+                    .environmentObject(viewModel)
+            }
+        }
     }
 }
-

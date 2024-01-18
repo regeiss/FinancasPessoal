@@ -63,9 +63,9 @@ extension LoginCoordinator: RouterViewFactory
         switch route
         {
         case .login:
-            LoginScreen<LoginCoordinator>()
+            EmptyView()
         case .home:
-            HomeScreen<HomeCoordinator>()
+            EmptyView()
         case .signup:
             SettingsScreen<SettingsCoordinator>()
         }

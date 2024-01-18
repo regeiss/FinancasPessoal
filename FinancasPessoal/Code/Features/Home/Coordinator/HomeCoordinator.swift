@@ -53,7 +53,7 @@ extension HomeCoordinator: RouterViewFactory
         switch route 
         {
         case .home:
-            HomeScreen<HomeCoordinator>()
+            HomeScreen()
         case .settings:
             SettingsScreen<SettingsCoordinator>()
         }

@@ -15,7 +15,7 @@ private enum FocusableField: Hashable
     case confirmPassword
 }
 
-struct SignupView: View 
+struct SignupScreen: View
 {
     @EnvironmentObject var viewModel: AuthenticationViewModel
     @Environment(\.dismiss) var dismiss

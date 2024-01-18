@@ -10,5 +10,3 @@ import Firebase
 import os
 import AuthenticationServices
 import CryptoKit
-
-

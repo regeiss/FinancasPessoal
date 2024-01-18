@@ -4,10 +4,31 @@
     "Alertas" : {
 
     },
+    "Already have an account?" : {
+
+    },
     "Backup" : {
 
     },
-    "Don't have a login? Signup!" : {
+    "Cancel" : {
+
+    },
+    "Confirm password" : {
+
+    },
+    "Delete Account" : {
+
+    },
+    "Deleting your account is permanent. Do you want to delete your account?" : {
+
+    },
+    "Don't have an account yet?" : {
+
+    },
+    "edit" : {
+
+    },
+    "Email" : {
 
     },
     "Home" : {
@@ -31,19 +52,49 @@
     "Key 5" : {
       "extractionState" : "manual"
     },
+    "Log in" : {
+
+    },
     "Login" : {
-
-    },
-    "Login.PasswordField.Title" : {
-
-    },
-    "Login.UsernameField.Title" : {
 
     },
     "Modo escuro" : {
 
     },
+    "or" : {
+
+    },
+    "Password" : {
+
+    },
+    "Profile" : {
+
+    },
     "Resetar Onboarding" : {
+
+    },
+    "Sign out" : {
+
+    },
+    "Sign up" : {
+
+    },
+    "Tap here to log in" : {
+
+    },
+    "Tap here to view your profile" : {
+
+    },
+    "Welcome to Favourites!" : {
+
+    },
+    "You need to be logged in to use this app." : {
+
+    },
+    "You're logged in as %@." : {
+
+    },
+    "You're not logged in." : {
 
     }
   },

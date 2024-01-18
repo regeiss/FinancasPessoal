@@ -6,12 +6,10 @@
 //
 
 import SwiftUI
-
-import SwiftUI
 import AuthenticationServices
 
 // see https://michael-ginn.medium.com/creating-optional-viewbuilder-parameters-in-swiftui-views-a0d4e3e1a0ae
-extension AuthenticadoScreen where Unauthenticated == EmptyView 
+extension AutenticadoScreen where Unauthenticated == EmptyView
 {
     init(@ViewBuilder content: @escaping () -> Content) 
     {
@@ -20,7 +18,7 @@ extension AuthenticadoScreen where Unauthenticated == EmptyView
     }
 }
 
-struct AuthenticadoScreen<Content, Unauthenticated>: View where Content: View, Unauthenticated: View 
+struct AutenticadoScreen<Content, Unauthenticated>: View where Content: View, Unauthenticated: View
 {
     @StateObject private var viewModel = AuthenticationViewModel()
     @State private var presentingLoginScreen = false
@@ -46,11 +44,14 @@ struct AuthenticadoScreen<Content, Unauthenticated>: View where Content: View, U
         switch viewModel.authenticationState 
         {
         case .unauthenticated, .authenticating:
-            VStack {
-                if let unauthenticated = unauthenticated {
+            VStack 
+            {
+                if let unauthenticated = unauthenticated 
+                {
                     unauthenticated
                 }
-                else {
+                else 
+                {
                     Text("You're not logged in.")
                 }
                 Button("Tap here to log in") {

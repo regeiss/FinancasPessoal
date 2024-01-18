@@ -43,7 +43,7 @@ struct UserProfileScreen: View
                         Spacer()
                         Image(systemName: "person.fill")
                             .resizable()
-                            .frame(width: 100 , height: 100)
+                            .frame(width: 100, height: 100)
                             .aspectRatio(contentMode: .fit)
                             .clipShape(Circle())
                             .clipped()

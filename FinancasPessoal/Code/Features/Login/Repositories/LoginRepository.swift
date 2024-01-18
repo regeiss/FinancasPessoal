@@ -12,14 +12,14 @@ import FirebaseFirestoreSwift
 
 class LoginRepository: ObservableObject
 {
-    let db = Firestore.firestore()
+    let dbf = Firestore.firestore()
     let userId = Auth.auth().currentUser?.uid
     
     @Published var login = [Login]()
     
     func loadData()
     {
-        db.collection("login")
+        dbf.collection("login")
             .whereField("userId", isEqualTo: userId as Any)
             .addSnapshotListener { (querySnapshot, error) in
                 if let querySnapshot = querySnapshot

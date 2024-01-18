@@ -54,7 +54,8 @@ class AuthenticationViewModel: ObservableObject
     
     func registerAuthStateHandler() 
     {
-        if authStateHandler == nil {
+        if authStateHandler == nil 
+        {
             authStateHandler = Auth.auth().addStateDidChangeListener { auth, user in
                 self.user = user
                 self.authenticationState = user == nil ? .unauthenticated : .authenticated
@@ -71,12 +72,14 @@ class AuthenticationViewModel: ObservableObject
     
     private func wait() async 
     {
-        do {
+        do
+        {
             print("Wait")
             try await Task.sleep(nanoseconds: 1_000_000_000)
             print("Done")
         }
-        catch {
+        catch 
+        {
             print(error.localizedDescription)
         }
     }
@@ -92,14 +95,18 @@ class AuthenticationViewModel: ObservableObject
 
 // MARK: - Email and Password Authentication
 
-extension AuthenticationViewModel {
-    func signInWithEmailPassword() async -> Bool {
+extension AuthenticationViewModel 
+{
+    func signInWithEmailPassword() async -> Bool
+    {
         authenticationState = .authenticating
-        do {
+        do 
+        {
             try await Auth.auth().signIn(withEmail: self.email, password: self.password)
             return true
         }
-        catch  {
+        catch  
+        {
             print(error)
             errorMessage = error.localizedDescription
             authenticationState = .unauthenticated
@@ -107,13 +114,16 @@ extension AuthenticationViewModel {
         }
     }
     
-    func signUpWithEmailPassword() async -> Bool {
+    func signUpWithEmailPassword() async -> Bool 
+    {
         authenticationState = .authenticating
-        do  {
+        do  
+        {
             try await Auth.auth().createUser(withEmail: email, password: password)
             return true
         }
-        catch {
+        catch 
+        {
             print(error)
             errorMessage = error.localizedDescription
             authenticationState = .unauthenticated
@@ -121,8 +131,10 @@ extension AuthenticationViewModel {
         }
     }
     
-    func signOut() {
-        do {
+    func signOut() 
+    {
+        do 
+        {
             try Auth.auth().signOut()
         }
         catch {
@@ -131,12 +143,15 @@ extension AuthenticationViewModel {
         }
     }
     
-    func deleteAccount() async -> Bool {
-        do {
+    func deleteAccount() async -> Bool 
+    {
+        do 
+        {
             try await user?.delete()
             return true
         }
-        catch {
+        catch 
+        {
             errorMessage = error.localizedDescription
             return false
         }
