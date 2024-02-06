@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SwiftUICoordinator
 
 struct HomeScreen: View
 {

@@ -17,7 +17,7 @@ struct ContentView: View
             {
                 Image(systemName: "number.circle.fill")
                     .resizable()
-                    .frame(width: 100 , height: 100)
+                    .frame(width: 100, height: 100)
                     .foregroundColor(Color(.systemPink))
                     .aspectRatio(contentMode: .fit)
                     .clipShape(Circle())
