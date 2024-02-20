@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Add" : {
+
+    },
     "Alertas" : {
 
     },
@@ -59,6 +62,12 @@
 
     },
     "Modo escuro" : {
+
+    },
+    "New Reminder" : {
+
+    },
+    "Nome" : {
 
     },
     "or" : {

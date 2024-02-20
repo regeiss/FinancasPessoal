@@ -14,6 +14,7 @@ struct HomeScreen: View
         VStack
         {
             Text("Home")
+            BancoListScreen()
         }
     }
 }

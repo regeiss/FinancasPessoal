@@ -13,7 +13,7 @@ class BancoViewModel: ObservableObject
     @Published var banco = [Banco]()
     @Published var errorMessage: String?
     
-    private var bancoRepository: BancoRepository =  BancoRepository()
+    private var bancoRepository: BancoRepository = BancoRepository()
     
     init()
     {

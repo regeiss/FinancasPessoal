@@ -7,15 +7,22 @@
 
 import SwiftUI
 
-struct AddBancoView: View
+struct BancoAddView: View
 {
     enum FocusableField: Hashable
     {
         case nome
     }
     
+    enum Mode 
+    {
+        case add
+        case edit
+    }
+
+    var mode: Mode = .add
     @FocusState private var focusedField: FocusableField?
-    @State private var banco = Banco(nome: "")
+    @State var banco = Banco(nome: "")
     @Environment(\.dismiss) private var dismiss
     
     let onCommit: (_ banco: Banco) -> Void
@@ -62,4 +69,3 @@ struct AddBancoView: View
         }
     }
 }
-

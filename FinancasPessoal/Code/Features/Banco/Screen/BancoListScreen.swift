@@ -38,7 +38,7 @@ struct BancoListScreen: View
         }
         .sheet(isPresented: $isAddReminderDialogPresented)
         {
-            BancoDetalheView { banco in
+            BancoAddView { banco in
                 viewModel.addBanco(banco)
             }
         }

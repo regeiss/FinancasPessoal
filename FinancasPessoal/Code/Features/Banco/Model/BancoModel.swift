@@ -26,6 +26,6 @@ extension Banco
     Banco(nome: "Build sample app"),
     Banco(nome: "Create tutorial"),
     Banco(nome: "???"),
-    Banco(nome: "PROFIT!"),
+    Banco(nome: "PROFIT!")
   ]
 }

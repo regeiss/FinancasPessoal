@@ -49,7 +49,7 @@
 		E166FD0B2B7449CC00F2AE76 /* BancoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E166FD0A2B7449CC00F2AE76 /* BancoModel.swift */; };
 		E166FD122B74518300F2AE76 /* BancoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E166FD112B74518300F2AE76 /* BancoViewModel.swift */; };
 		E1A4F54C2B82D06000054BA2 /* BancoListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F54B2B82D06000054BA2 /* BancoListScreen.swift */; };
-		E1A4F54E2B82D22400054BA2 /* AddBancoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F54D2B82D22400054BA2 /* AddBancoView.swift */; };
+		E1A4F54E2B82D22400054BA2 /* BancoAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F54D2B82D22400054BA2 /* BancoAddView.swift */; };
 		E1A4F5502B82D6F200054BA2 /* BancoDetalheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F54F2B82D6F200054BA2 /* BancoDetalheView.swift */; };
 		E1B13D792B4E20AD00E6E8B1 /* BancoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B13D782B4E20AD00E6E8B1 /* BancoRepository.swift */; };
 		E1D122EF2B5568A300D30493 /* AutenticacaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D122EE2B5568A300D30493 /* AutenticacaoService.swift */; };
@@ -78,7 +78,7 @@
 		E166FD0A2B7449CC00F2AE76 /* BancoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancoModel.swift; sourceTree = "<group>"; };
 		E166FD112B74518300F2AE76 /* BancoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancoViewModel.swift; sourceTree = "<group>"; };
 		E1A4F54B2B82D06000054BA2 /* BancoListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancoListScreen.swift; sourceTree = "<group>"; };
-		E1A4F54D2B82D22400054BA2 /* AddBancoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBancoView.swift; sourceTree = "<group>"; };
+		E1A4F54D2B82D22400054BA2 /* BancoAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancoAddView.swift; sourceTree = "<group>"; };
 		E1A4F54F2B82D6F200054BA2 /* BancoDetalheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancoDetalheView.swift; sourceTree = "<group>"; };
 		E1B13D782B4E20AD00E6E8B1 /* BancoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancoRepository.swift; sourceTree = "<group>"; };
 		E1D122EE2B5568A300D30493 /* AutenticacaoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticacaoService.swift; sourceTree = "<group>"; };
@@ -230,7 +230,7 @@
 		E166FD0F2B74501D00F2AE76 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E1A4F54D2B82D22400054BA2 /* AddBancoView.swift */,
+				E1A4F54D2B82D22400054BA2 /* BancoAddView.swift */,
 				E1A4F54F2B82D6F200054BA2 /* BancoDetalheView.swift */,
 			);
 			path = View;
@@ -671,7 +671,7 @@
 				E166FD122B74518300F2AE76 /* BancoViewModel.swift in Sources */,
 				E1D122EF2B5568A300D30493 /* AutenticacaoService.swift in Sources */,
 				E166FD0B2B7449CC00F2AE76 /* BancoModel.swift in Sources */,
-				E1A4F54E2B82D22400054BA2 /* AddBancoView.swift in Sources */,
+				E1A4F54E2B82D22400054BA2 /* BancoAddView.swift in Sources */,
 				E1A4F54C2B82D06000054BA2 /* BancoListScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
