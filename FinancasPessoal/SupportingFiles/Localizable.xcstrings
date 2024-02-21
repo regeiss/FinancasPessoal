@@ -25,7 +25,13 @@
     "Deleting your account is permanent. Do you want to delete your account?" : {
 
     },
+    "Details" : {
+
+    },
     "Don't have an account yet?" : {
+
+    },
+    "Done" : {
 
     },
     "edit" : {

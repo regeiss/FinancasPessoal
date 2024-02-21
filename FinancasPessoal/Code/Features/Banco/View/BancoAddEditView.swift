@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BancoAddView: View
+struct BancoAddEditView: View
 {
     enum FocusableField: Hashable
     {
@@ -47,22 +47,22 @@ struct BancoAddView: View
                 TextField("Nome", text: $banco.nome)
                     .focused($focusedField, equals: .nome)
             }
-            .navigationTitle("New Reminder")
+            .navigationTitle(mode == .add ? "New Reminder" : "Details")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button(action: cancel) {
-                        Text("Cancel")
-                    }
+              ToolbarItem(placement: .cancellationAction) {
+                Button(action: cancel) {
+                  Text("Cancel")
                 }
-                ToolbarItem(placement: .confirmationAction) {
-                    Button(action: commit) {
-                        Text("Add")
-                    }
-                    .disabled(banco.nome.isEmpty)
+              }
+              ToolbarItem(placement: .confirmationAction) {
+                Button(action: commit) {
+                  Text(mode == .add ? "Add" : "Done")
                 }
+                .disabled(banco.nome.isEmpty)
+              }
             }
-            .onAppear 
+            .onAppear
             {
                 focusedField = .nome
             }

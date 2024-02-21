@@ -11,6 +11,7 @@ struct BancoListScreen: View
 {
     @StateObject private var viewModel = BancoViewModel()
     @State private var isAddReminderDialogPresented = false
+    @State private var editableBanco: Banco? = nil
     
     private func presentAddReminderView()
     {
@@ -21,6 +22,9 @@ struct BancoListScreen: View
     {
         List($viewModel.banco) { $banco in
             BancoDetalheView(banco: $banco)
+                .onTapGesture {
+                    editableBanco = banco
+                }
         }
         .toolbar {
             ToolbarItemGroup(placement: .bottomBar)
@@ -38,10 +42,15 @@ struct BancoListScreen: View
         }
         .sheet(isPresented: $isAddReminderDialogPresented)
         {
-            BancoAddView { banco in
+            BancoAddEditView { banco in
                 viewModel.addBanco(banco)
             }
         }
+        .sheet(item: $editableBanco) { banco in
+            BancoAddEditView(mode: .edit,  banco: banco) { banco in
+                viewModel.update(banco)
+            }
+            }
         .tint(.red)
     }
 }
