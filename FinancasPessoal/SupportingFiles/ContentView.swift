@@ -29,7 +29,7 @@ struct ContentView: View
                 Text("You need to be logged in to use this app.")
             }
             content: {
-                HomeScreen()
+                BancoListScreen()
                 Spacer()
         }
         }

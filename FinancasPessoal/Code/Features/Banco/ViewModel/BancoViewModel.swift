@@ -48,4 +48,9 @@ class BancoViewModel: ObservableObject
             errorMessage = error.localizedDescription
         }
     }
+    
+    func delete(_ banco: Banco)
+    {
+        bancoRepository.delete(banco)
+    }
 }

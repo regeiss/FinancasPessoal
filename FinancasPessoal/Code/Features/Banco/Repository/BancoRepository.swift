@@ -6,17 +6,15 @@
 //
 
 import Foundation
+import Factory
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 class BancoRepository: ObservableObject
 {
-    
-//    let dbf = Firestore.firestore()
-//    let userId = Auth.auth().currentUser?.uid
-    private var listenerRegistration: ListenerRegistration?
-    
+    @Injected(\.firestore) var firestore
     @Published var banco = [Banco]()
+    private var listenerRegistration: ListenerRegistration?
     
     init()
     {
@@ -30,13 +28,13 @@ class BancoRepository: ObservableObject
     
     func subscribe()
     {
-        if listenerRegistration == nil 
+        if listenerRegistration == nil
         {
             let query = Firestore.firestore().collection(Banco.collectionName)
             
             listenerRegistration = query
                 .addSnapshotListener { [weak self] (querySnapshot, error) in
-                    guard let documents = querySnapshot?.documents 
+                    guard let documents = querySnapshot?.documents
                     else
                     {
                         print("No documents")
@@ -44,18 +42,18 @@ class BancoRepository: ObservableObject
                     }
                     
                     print("Mapping \(documents.count) documents")
-                    documents.compactMap { queryDocumentSnapshot in
-                        do 
+                    self?.banco = documents.compactMap { queryDocumentSnapshot in
+                        do
                         {
                             return try queryDocumentSnapshot.data(as: Banco.self)
                         }
-                        catch 
+                        catch
                         {
                             print("Error while trying to map document \(queryDocumentSnapshot.documentID): \(error.localizedDescription)")
                             return nil
                         }
                     }
-            }
+                }
         }
     }
     
@@ -70,8 +68,7 @@ class BancoRepository: ObservableObject
     
     func addBanco(_ banco: Banco) throws
     {
-        try Firestore
-            .firestore()
+        try firestore
             .collection(Banco.collectionName)
             .addDocument(from: banco)
         
@@ -85,26 +82,23 @@ class BancoRepository: ObservableObject
             fatalError("Banco \(banco.nome) has no document ID.")
         }
         
-        try Firestore
-            .firestore()
+        try firestore
             .collection(Banco.collectionName)
             .document(documentId)
             .setData(from: banco, merge: true)
     }
     
-    
-    
-//    func loadData()
-//    {
-//        dbf.collection("banco")
-//            .whereField("id", isEqualTo: userId as Any)
-//            .addSnapshotListener { (querySnapshot, error) in
-//                if let querySnapshot = querySnapshot
-//                {
-//                    self.banco = querySnapshot.documents.compactMap { document in
-//                        try? document.data(as: Banco.self)
-//                    }
-//                }
-//            }
-//    }
+    func delete(_ banco: Banco)
+    {
+        guard let documentId = banco.id
+        else
+        {
+            fatalError("Reminder \(banco.nome) has no document ID.")
+        }
+        
+        firestore
+            .collection(Banco.collectionName)
+            .document(documentId)
+            .delete()
+    }
 }

@@ -20,11 +20,11 @@ struct BancoAddEditView: View
         case edit
     }
 
-    var mode: Mode = .add
     @FocusState private var focusedField: FocusableField?
     @State var banco = Banco(nome: "")
     @Environment(\.dismiss) private var dismiss
     
+    var mode: Mode = .add
     let onCommit: (_ banco: Banco) -> Void
     
     private func commit()
@@ -46,6 +46,9 @@ struct BancoAddEditView: View
             {
                 TextField("Nome", text: $banco.nome)
                     .focused($focusedField, equals: .nome)
+                    .onSubmit {
+                        commit()
+                    }
             }
             .navigationTitle(mode == .add ? "New Reminder" : "Details")
             .navigationBarTitleDisplayMode(.inline)

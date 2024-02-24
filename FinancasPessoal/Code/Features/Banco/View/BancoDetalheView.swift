@@ -15,8 +15,9 @@ struct BancoDetalheView: View
     {
         HStack
         {
+            Text("Detalhe")
             TextField(banco.nome, text: $banco.nome)
-        }
-        
+            Spacer()
+        }.contentShape(Rectangle())
     }
 }

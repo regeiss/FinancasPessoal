@@ -11,7 +11,7 @@ struct BancoListScreen: View
 {
     @StateObject private var viewModel = BancoViewModel()
     @State private var isAddReminderDialogPresented = false
-    @State private var editableBanco: Banco? = nil
+    @State private var editableBanco: Banco?
     
     private func presentAddReminderView()
     {
@@ -20,11 +20,20 @@ struct BancoListScreen: View
     
     var body: some View
     {
+        Text("Lista")
         List($viewModel.banco) { $banco in
             BancoDetalheView(banco: $banco)
-                .onTapGesture {
-                    editableBanco = banco
+                .swipeActions(edge: .trailing, allowsFullSwipe: true)
+            {
+                Button(role: .destructive, action: { viewModel.delete(banco)})
+                {
+                    Image(systemName: "trash")
                 }
+            }
+            .onTapGesture
+            {
+                editableBanco = banco
+            }
         }
         .toolbar {
             ToolbarItemGroup(placement: .bottomBar)
@@ -47,10 +56,10 @@ struct BancoListScreen: View
             }
         }
         .sheet(item: $editableBanco) { banco in
-            BancoAddEditView(mode: .edit,  banco: banco) { banco in
+            BancoAddEditView(banco: banco, mode: .edit) { banco in
                 viewModel.update(banco)
             }
-            }
+        }
         .tint(.red)
     }
 }
