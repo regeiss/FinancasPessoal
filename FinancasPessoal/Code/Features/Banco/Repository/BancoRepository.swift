@@ -10,7 +10,7 @@ import Factory
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
-class BancoRepository: ObservableObject
+public class BancoRepository: ObservableObject
 {
     @Injected(\.firestore) var firestore
     @Published var banco = [Banco]()

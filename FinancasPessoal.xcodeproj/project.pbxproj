@@ -51,6 +51,7 @@
 		E17678712B89648500913490 /* AppCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17678702B89648500913490 /* AppCheck.swift */; };
 		E17678742B896CF300913490 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = E17678732B896CF300913490 /* Factory */; };
 		E17678772B896DBE00913490 /* Firebase+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17678762B896DBE00913490 /* Firebase+Injection.swift */; };
+		E176787A2B8A2FB100913490 /* Repository+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17678792B8A2FB100913490 /* Repository+Injection.swift */; };
 		E1A4F54C2B82D06000054BA2 /* BancoListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F54B2B82D06000054BA2 /* BancoListScreen.swift */; };
 		E1A4F54E2B82D22400054BA2 /* BancoAddEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F54D2B82D22400054BA2 /* BancoAddEditView.swift */; };
 		E1A4F5502B82D6F200054BA2 /* BancoDetalheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4F54F2B82D6F200054BA2 /* BancoDetalheView.swift */; };
@@ -82,6 +83,7 @@
 		E166FD112B74518300F2AE76 /* BancoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancoViewModel.swift; sourceTree = "<group>"; };
 		E17678702B89648500913490 /* AppCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCheck.swift; sourceTree = "<group>"; };
 		E17678762B896DBE00913490 /* Firebase+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Injection.swift"; sourceTree = "<group>"; };
+		E17678792B8A2FB100913490 /* Repository+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Injection.swift"; sourceTree = "<group>"; };
 		E1A4F54B2B82D06000054BA2 /* BancoListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancoListScreen.swift; sourceTree = "<group>"; };
 		E1A4F54D2B82D22400054BA2 /* BancoAddEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancoAddEditView.swift; sourceTree = "<group>"; };
 		E1A4F54F2B82D6F200054BA2 /* BancoDetalheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BancoDetalheView.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				E1B13D782B4E20AD00E6E8B1 /* BancoRepository.swift */,
+				E17678792B8A2FB100913490 /* Repository+Injection.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -261,9 +264,17 @@
 		E17678752B896DA600913490 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				E17678762B896DBE00913490 /* Firebase+Injection.swift */,
+				E17678782B8A2F6500913490 /* Services */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		E17678782B8A2F6500913490 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E17678762B896DBE00913490 /* Firebase+Injection.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		E1D122ED2B55682600D30493 /* Services */ = {
@@ -691,6 +702,7 @@
 				E1D122F82B55708300D30493 /* SignUpScreen.swift in Sources */,
 				E17678712B89648500913490 /* AppCheck.swift in Sources */,
 				E1D34D092B44E8EF004552C4 /* HomeScreen.swift in Sources */,
+				E176787A2B8A2FB100913490 /* Repository+Injection.swift in Sources */,
 				E1D122FC2B5570BD00D30493 /* AutenticacaoViewModel.swift in Sources */,
 				E13DD2B42B25FF00002707D2 /* FinancasPessoalApp.swift in Sources */,
 				E1D122FE2B55714E00D30493 /* AutenticadoScreen.swift in Sources */,

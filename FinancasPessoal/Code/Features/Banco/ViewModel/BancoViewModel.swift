@@ -7,13 +7,15 @@
 
 import Foundation
 import Combine
+import Factory
 
 class BancoViewModel: ObservableObject
 {
     @Published var banco = [Banco]()
     @Published var errorMessage: String?
+    @Injected(\.bancoRepository)
     
-    private var bancoRepository: BancoRepository = BancoRepository()
+    private var bancoRepository: BancoRepository
     
     init()
     {
